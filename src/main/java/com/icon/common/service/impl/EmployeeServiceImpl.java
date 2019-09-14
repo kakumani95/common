@@ -1,6 +1,6 @@
 package com.icon.common.service.impl;
 
-import java.util.List;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	EmployeeUtils employeeUtils;
 	
 	@Override
-	public List<Employee> getEmployees() {
+	public Set<Employee> getEmployees() {
 		return employeeUtils.getEmployees();
 	}
 
